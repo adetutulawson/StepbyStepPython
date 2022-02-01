@@ -23,5 +23,8 @@ files = glob.glob(files)
 ####Merging 12months of data into a single file
 df = pd.concat(
    map(pd.read_csv, files), ignore_index=True)
-print(df)
+#print(df)
 
+df.to_csv(r"C:\Users\Okeola Mudashiru\Documents\GitHub\MyOwnProjects\StepbyStepPython\Pandas-Data-Science-Tasks-master\SalesAnalysis\Sales_Data\salesMain1.csv")
+fileNow=pd.read_csv(r"C:\Users\Okeola Mudashiru\Documents\GitHub\MyOwnProjects\StepbyStepPython\Pandas-Data-Science-Tasks-master\SalesAnalysis\Sales_Data\salesMain1.csv")
+print(fileNow)
